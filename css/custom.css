@@ -1,43 +1,79 @@
-body{
+body {
     font-family: 'Lato', sans-serif;
     color: #2d3c49;
     font-weight: 300;
 }
-.text-muted{
-    color:#7d97ad;
+
+.text-muted {
+    color: #7d97ad;
 }
-.text-thin{
+
+.text-thin {
     font-weight: 100;
 }
+
 hr {
     border: none;
     height: 5px;
     background-color: #7d97ad;
 }
-.title{
+
+.title {
 
 }
-.title-sub{
+
+.title-sub {
     font-size: 20px;
 }
-.title-super{
+
+.title-super {
     font-size: 60px;
 }
-.title-logo{
+
+.title-logo {
     margin-top: 20px;
 }
-.project-list-header{
+
+.project-list-header {
     padding-left: 20px;
     font-size: 40px;
 }
-.project-image{
-    border: solid black 1px;
+
+.project-image {
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;;
 }
 
-.project-label{
+.project-image:hover{
+    cursor: pointer;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.project-image-btn{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+.project-image-btn{
+    outline: none;
+}
+
+.project-label {
     font-size: 30px;
     font-weight: 700;
 }
-.project-repo-link{
+
+.project-repo-link {
     font-size: 15px;
+}
+
+.overflow-div {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
 }

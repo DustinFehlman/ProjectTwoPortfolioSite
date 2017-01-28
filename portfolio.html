@@ -1,57 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio Page</title>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/custom.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="title-logo" src="http://placehold.it/100x100" alt="Portfolio Logo">
-                </div>
-                <div class="col-md-6 text-right text-uppercase">
-                    <h1 class="title title-super text-thin">Dustin Fehlman</h1>
-                    <h4 class="title title-sub">Full Stack Web Developer</h4>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <div class="col-md-6">
+            <img class="title-logo" src="http://placehold.it/100x100" alt="Portfolio Logo">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title title-super text-thin">Dustin Fehlman</h1>
+            <h4 class="title title-sub">Full Stack Web Developer</h4>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="container-fluid overflow-div">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-responsive" src="http://placehold.it/1920x550" alt="Main Image">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="project-list-header text-muted">Featured Work</h2>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-secondary project-image-btn" data-toggle="modal"
+                    data-target="#project-one-model">
+                <img class="project-image img-responsive img-rounded" src="http://placehold.it/380x300"
+                     alt="Left Work Image">
+            </button>
+            <h3 class="project-label text-uppercase">{Project One Title}</h3>
+            <a href="https://github.com/DustinFehlman" class="project-repo-link">{Git Hub Link}</a>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-secondary project-image-btn" data-toggle="modal"
+                    data-target="#project-two-model">
+                <img class="project-image img-responsive img-rounded" src="http://placehold.it/380x300"
+                     alt="Center Work Image">
+            </button>
+            <h3 class="project-label text-uppercase">{Project Two Title}</h3>
+            <a href="https://github.com/DustinFehlman" class="project-repo-link">{Git Hub Link}</a>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-secondary project-image-btn" data-toggle="modal"
+                    data-target="#project-three-model">
+                <img class="project-image img-responsive img-rounded" src="http://placehold.it/380x300"
+                     alt="Right Work Image">
+            </button>
+            <h3 class="project-label text-uppercase">{Project Three Title}</h3>
+            <a href="https://github.com/DustinFehlman" class="project-repo-link">{Git Hub Link}</a>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </footer>
+</div>
+<div class="modal fade" id="project-one-model" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Project One Info</h4>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
+            <div class="modal-body">
+                <p>Was justice improve age article between. No projection as up preference reasonably delightful
+                    celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters
+                    forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded
+                    depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had
+                    covered but evident chapter matters anxious.
+
+                    He difficult contented we determine ourselves me am earnestly. Hour no find it park. Eat welcomed
+                    any husbands moderate. Led was misery played waited almost cousin living. Of intention contained is
+                    by middleton am. Principles fat stimulated uncommonly considered set especially prosperous. Sons at
+                    park mr meet as fact like.
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <img class="img-responsive" src="http://placehold.it/1142x410" alt="Main Image">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="project-list-header text-muted">Featured Work</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img class="project-image img-responsive" src="http://placehold.it/380x300" alt="Left Work Image">
-                    <h3 class="project-label text-uppercase">{Work Title}</h3>
-                    <p class="project-repo-link">{Git Hub Link}</p>
-                </div>
-                <div class="col-md-4">
-                    <img class="project-image img-responsive" src="http://placehold.it/380x300" alt="Center Work Image">
-                    <h3 class="project-label text-uppercase">{Work Title}</h3>
-                    <p class="project-repo-link">{Git Hub Link}</p>
-                </div>
-                <div class="col-md-4">
-                    <img class="project-image img-responsive" src="http://placehold.it/380x300" alt="Right Work Image">
-                    <h3 class="project-label text-uppercase">{Work Title}</h3>
-                    <p class="project-repo-link">{Git Hub Link}</p>
-                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+<div class="modal fade" id="project-two-model" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Project Two Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>Was justice improve age article between. No projection as up preference reasonably delightful
+                    celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters
+                    forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded
+                    depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had
+                    covered but evident chapter matters anxious.
+
+                    He difficult contented we determine ourselves me am earnestly. Hour no find it park. Eat welcomed
+                    any husbands moderate. Led was misery played waited almost cousin living. Of intention contained is
+                    by middleton am. Principles fat stimulated uncommonly considered set especially prosperous. Sons at
+                    park mr meet as fact like.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="project-three-model" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Project Three Info</h4>
+            </div>
+            <div class="modal-body">
+                <p>Was justice improve age article between. No projection as up preference reasonably delightful
+                    celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters
+                    forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded
+                    depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had
+                    covered but evident chapter matters anxious.
+
+                    He difficult contented we determine ourselves me am earnestly. Hour no find it park. Eat welcomed
+                    any husbands moderate. Led was misery played waited almost cousin living. Of intention contained is
+                    by middleton am. Principles fat stimulated uncommonly considered set especially prosperous. Sons at
+                    park mr meet as fact like.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
