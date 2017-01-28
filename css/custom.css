@@ -18,10 +18,6 @@ hr {
     background-color: #7d97ad;
 }
 
-.title {
-
-}
-
 .title-sub {
     font-size: 20px;
 }
@@ -33,7 +29,12 @@ hr {
 .title-logo {
     margin-top: 20px;
 }
-
+.tit-div{
+    margin-left: 0;
+}
+.logo-div{
+    margin-right: 0;
+}
 .project-list-header {
     padding-left: 20px;
     font-size: 40px;
@@ -76,4 +77,9 @@ hr {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+}
+@media (max-width: 992px) {
+    .title {
+        text-align: center;
+    }
 }
