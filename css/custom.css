@@ -6,36 +6,54 @@ body {
 }
 
 .top-wrapper {
+    opacity: 0;
     animation: fadein 4s;
     -webkit-animation: fadein 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 2s;
-    opacity: 0;
+    -webkit-animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadein 4s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
 .mid-wrapper {
+    opacity: 0;
     animation: fadein 4s;
     -webkit-animation: fadein 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 2.5s;
-    opacity: 0;
+    -webkit-animation-delay: 2.5s;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadein 4s;
+    -moz-animation-delay: 2.5s;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
 
 .bot-wrapper {
+    opacity: 0;
     animation: fadein 4s;
     -webkit-animation: fadein 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 3s;
-    opacity: 0;
+    -webkit-animation-delay: 3s;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadein 4s;
+    -moz-animation-delay: 3s;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
     from {
         opacity: 0;
     }
@@ -113,8 +131,6 @@ hr {
     cursor: pointer;
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
 
